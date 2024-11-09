@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJETO PRATICO: Desenvolver um formulario de casdastro em HTML</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(to right, rgba(20,147,220), rgb(19, 34, 41))
+    }
+    .box{
+        color:rgb(233, 200, 157);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: darkblue;
+        padding: 10px;
+        border-radius: 10px;
+        width: 30%;
+        max-width: 500px;
+        max-height: 600px;
+    }
+    fieldset{
+        border: 5px solid dodgerblue;
+    }
+    .inputbox{
+        position: relative;
+        padding: 10px;
+    }
+    legend{
+        border: 1px solid dodgerblue;
+        padding: 10px;
+        text-align: center;
+        background-color: dodgerblue;
+        border-radius: 8px;
+    }
+    .inputBox{
+        background: none;
+        border: rgb(199, 42, 42);
+        outline: none;
+        color:rgb(203, 211, 218);
+        font-size: 15px;
+        width: 100%;
+        padding: 8px;
+    }
+    .inputUser{
+        background: none;
+        border: rgb(199, 42, 42);
+        outline: none;
+        color:rgb(199, 207, 214);
+        font-size: 15px;
+        width: 100%;
+        padding: 8px;
+    }
+    .inputEmail{
+        background: none;
+        border: rgb(199, 42, 42);
+        outline: none;
+        color:rgb(57, 133, 199);
+        font-size: 15px;
+        width: 100%;
+        padding: 8px;
+    }
+    .inputTelefone{
+        background: none;
+        border: rgb(199, 42, 42);
+        outline: none;
+        color:rgb(57, 133, 199);
+        font-size: 15px;
+        width: 100%;
+        padding: 8px;
+    }
+    .inputSexo{
+        background: none;
+        border: rgb(199, 42, 42);
+        outline: none;
+        color:rgb(57, 133, 199);
+        font-size: 15px;
+        width: 100%;
+        padding: 8px;
+    }
+    .inputData{
+        background: none;
+        border: rgb(199, 42, 42);
+        outline: none;
+        color:rgb(57, 133, 199);
+        font-size: 15px;
+        width: 100%;
+        padding: 8px;
+    }
+    .inputcidade{
+        background: none;
+        border: rgb(199, 42, 42);
+        outline: none;
+        color:rgb(57, 133, 199);
+        font-size: 15px;
+        width: 100%;
+        padding: 8px;
+    }
+    .inputestado{
+        background: none;
+        border: rgb(199, 42, 42);
+        outline: none;
+        color:rgb(57, 133, 199);
+        font-size: 15px;
+        width: 100%;
+        padding: 8px;
+    }
+    .inputendereço{
+        background: none;
+        border: rgb(199, 42, 42);
+        outline: none;
+        color:rgb(57, 133, 199);
+        font-size: 15px;
+        width: 100%;
+        padding: 8px;
+    }
+
+</style>
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><strong>Cadastro de cliente</strong></legend><br>
+                <div class="inputBox">
+                    <label for="nome" class="labelInput">Nome:</label><br>
+                    <input type="text" name="nome" id="nome" class="inputUser" placeholder="nome" required><br>
+                </div>
+                <div class="inputBox">
+                    <label for="Email" class="labelInput">Email:</label><br>
+                    <input type="text" name="Email" id="Email" class="inputEmail" placeholder="Email" required><br>
+                </div>
+                <div class="inputBox">
+                    <label for="Telefone" class="labelInput">Telefone:</label>
+                    <input type="text" name="Telefone" id="Telefone" class="inputTelefone" placeholder="Telefone" required><br>
+                </div>
+                <div class="inputBox">
+                    <label for="Sexo" class="labelInput">Sexo:</label>
+                    <select type="radio" name="Sexo" id="Sexo" class="inputSexo" placeholder="Sexo" required><br>
+                        <option value="Feinino">Feminino</option>
+                        <option value="Masculino">masculino</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <label for="Data" class="labelInput">Data de Nascimento:</label>
+                    <input type="date" name="Data" id="Data" class="inputData" required><br>
+                </div>
+                <div class="inputBox">
+                    <label for="Cidade" class="labelInput">Cidade:</label>
+                    <input type="text" name="cidade" id="cidade" class="inputcidade" placeholder="cidade" required><br>
+                </div>
+                <div class="inputBox">
+                    <label for="Estado" class="labelInput">Estado:</label>
+                    <input type="text" name="estado" id="estado" class="inputestado" placeholder="Estado" required><br>
+                </div>
+                <div class="inputBox">
+                    <label for="nome" class="labelInput">endereço:</label>
+                    <input type="text" name="endereço" id="endereço" class="inputEndereço" placeholder="nome" required><br>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
